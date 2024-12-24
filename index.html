@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laser-Tech</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Add Roboto font -->
+</head>
+<body>
+    <header>
+        <img src="logo.jpg" alt="Laser-Tech">
+        <div>
+            <h1>Laser-Tech</h1>
+            <h2>Usługowe cięcie laserem</h2>
+        </div>
+        <nav>
+            <ul>
+                <a href="#main">Strona Główna</a>
+                <a href="#photos">Galeria</a>
+                <a href="#contact">Kontakt</a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="video">
+            <video autoplay="" loop="" muted="" playsinline="" id="background-video"><source src="vid.webm" type="video/webm"></video>
+            <div class="motto"><strong>Precyzja</strong> i <strong>jakość</strong> w każdym cięciu</div>
+            <a href="#contact" class="kontakt-button">Kontakt</a>
+        </section>
+        
+        <section class="about-us" id="about-us">
+            <div class="content">
+                <h2>O Nas</h2>
+                <p><strong>LASER-TECH Tworków</strong> to firma z długoletnim doświadczeniem w branży precyzyjnego cięcia laserowego.<br>
+                Działamy na rynku od <strong>25 stycznia 1991 roku</strong>, co czyni nas jednym z liderów w tej dziedzinie.<br>
+                Dzięki bogatej historii i stale rozwijanej technologii jesteśmy w stanie sprostać nawet najbardziej wymagającym projektom.<br>
+                Naszym priorytetem jest <strong>jakość</strong>, <strong>precyzja</strong> oraz <strong>zadowolenie klienta</strong>.<br>
+                Wieloletnie doświadczenie, poparte innowacyjnym podejściem, pozwala nam oferować niezawodne i skuteczne rozwiązania dostosowane do indywidualnych potrzeb.</p>
+            </div>
+            <div class="photo">
+                <img src="photos/photo1.jpg" alt="About Us Photo">
+            </div>
+        </section>
+
+        <section class="offer" id="offer">
+            <div class="content">
+                <h2>Nasza oferta</h2>
+            </div>
+            <div class="additional-services">
+                <div class="service">
+                    <img src="photos/photo3.jpg" alt="Cięcie laserem">
+                    <h3>Cięcie laserem</h3>
+                    <p>Precyzyjne cięcie laserowe różnych materiałów:
+                        <ul>
+                            <li><strong>Blach stalowych</strong> – do 30 mm</li>
+                            <li><strong>Stali nierdzewnej</strong> – do 20 mm</li>
+                            <li><strong>Aluminium</strong> – do 15 mm</li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="service">
+                    <img src="photos/photo4.jpg" alt="Spawanie laserowe">
+                    <h3>Spawanie laserowe</h3>
+                    <p>Wysokiej jakości spawanie laserowe. Wykorzystujemy <strong>spawarkę 3kV</strong> dla niezrównanej precyzji i efektywności. Sprawdzi się w różnorodnych projektach przemysłowych i konstrukcyjnych.</p>
+                </div>
+                <div class="service">
+                    <img src="photos/photo5.jpg" alt="Gięcie elementów prasą krawędziową">
+                    <h3>Gięcie elementów prasą krawędziową</h3>
+                    <p>Profesjonalne gięcie elementów z użyciem prasy krawędziowej:
+                        <ul>
+                            <li><strong>Maksymalna szerokość</strong> – 3000 mm</li>
+                            <li><strong>Siła nacisku</strong> – 160 ton</li>
+                        </ul>
+                        Oferujemy najwyższą dokładność dostosowaną do indywidualnych wymagań projektowych.
+                    </p>
+                </div>
+            </div>
+            <br>
+            <p>Każdy projekt realizujemy z najwyższą <strong>precyzją</strong> i <strong>dbałością o szczegóły</strong>. Nasze usługi skierowane są do branży <strong>przemysłowej</strong>, <strong>motoryzacyjnej</strong>, <strong>budowlanej</strong> oraz <strong>klientów indywidualnych</strong>.</p>
+        </section>
+
+        <section class="photos" id="photos">
+            <a href="#lightbox1"><img src="photos/photo1.jpg" alt="Photo 1"></a>
+            <a href="#lightbox2"><img src="photos/photo2.jpg" alt="Photo 2"></a>
+            <a href="#lightbox3"><img src="photos/photo3.jpg" alt="Photo 3"></a>
+            <a href="#lightbox4"><img src="photos/photo4.jpg" alt="Photo 4"></a>
+            <a href="#lightbox5"><img src="photos/photo5.jpg" alt="Photo 5"></a>
+        </section>
+
+        <div id="lightbox1" class="lightbox">
+            <a href="#photos" class="lightbox-close"></a>
+            <img src="photos/photo1.jpg" alt="Photo 1">
+        </div>
+        <div id="lightbox2" class="lightbox">
+            <a href="#photos" class="lightbox-close"></a>
+            <img src="photos/photo2.jpg" alt="Photo 2">
+        </div>
+        <div id="lightbox3" class="lightbox">
+            <a href="#photos" class="lightbox-close"></a>
+            <img src="photos/photo3.jpg" alt="Photo 3">
+        </div>
+        <div id="lightbox4" class="lightbox">
+            <a href="#photos" class="lightbox-close"></a>
+            <img src="photos/photo4.jpg" alt="Photo 4">
+        </div>
+        <div id="lightbox5" class="lightbox">
+            <a href="#photos" class="lightbox-close"></a>
+            <img src="photos/photo5.jpg" alt="Photo 5">
+        </div>
+
+        <section class="why-us" id="why-us">
+            <div class="content">
+                <h2>Dlaczego my?</h2>
+                <p>Wybierając <strong>LASER-TECH</strong>, zyskujesz:</p>
+                <ul>
+                    <li><strong>Doświadczenie i profesjonalizm</strong> – działamy na rynku od lat i zrealizowaliśmy tysiące projektów.</li>
+                    <li><strong>Nowoczesny sprzęt</strong> – precyzyjne urządzenia zapewniają najwyższą jakość.</li>
+                    <li><strong>Terminowość</strong> – Twoje zlecenie wykonamy zgodnie z ustalonym harmonogramem.</li>
+                </ul>
+            </div>
+            <div class="photo">
+                <img src="photos/photo3.jpg" alt="Why Us Photo">
+            </div>
+        </section>
+
+        
+
+        <section class="google-opinions" id="google-opinions">
+            <div class="content">
+                <h2>Opinie Klientów</h2>
+                <div class="slider">
+                    <div class="slides">
+                        <div class="slide">
+                            <p>"Szybko sprawnie i tanio. Polecam"</p>
+                            <p><strong>- Michał P.</strong></p>
+                            <div class="stars">
+                                ★★★★★
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <p>"Szybka realizacja, świetne wykonanie i dobre ceny."</p>
+                            <p><strong>- Dominik D.</strong></p>
+                            <div class="stars">
+                                ★★★★★
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <p>"Polecam"</p>
+                            <p><strong>- Mateusz K.</strong></p>
+                            <div class="stars">
+                                ★★★★★
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <p>"Bardzo polecam."</p>
+                            <p><strong>- Mateusz P.</strong></p>
+                            <div class="stars">
+                                ★★★★★
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <p>"Wysoka jakość usług, ekspresowa realizacja. Polecam!"</p>
+                            <p><strong>- Grzegory</strong></p>
+                            <div class="stars">
+                                ★★★★★
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <p>"Polecam, szybko, dokładnie i tanio, super kontakt z klientem"</p>
+                            <p><strong>- Mateusz P.</strong></p>
+                            <div class="stars">
+                                ★★★★★
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <p>"Najlepszy stosunek jakości do ceny, bardzo polecam usługi tej firmy."</p>
+                            <p><strong>- Tomasz I.</strong></p>
+                            <div class="stars">
+                                ★★★★★
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <p>"Naprawdę firma godna polecenia , dla nich nie ma rzeczy niemożliwych :) Polecam"</p>
+                            <p><strong>- Denis P.</strong></p>
+                            <div class="stars">
+                                ★★★★★
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <p>"Szybko, w dobrej cenie i profesjonalnie. Obsługa bardzo pozytywna"</p>
+                            <p><strong>- Sylwester C.</strong></p>
+                            <div class="stars">
+                                ★★★★★
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <p>"Najlepsza firma z wycinaniem laserowym. Terminy, ceny i dogadanie na najwyższym poziomie. POLECAM !!!!!!!!!!!"</p>
+                            <p><strong>- Krzysztof K.</strong></p>
+                            <div class="stars">
+                                ★★★★★
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <p>"Wszystko zrobione na czas, dobra jakość, dobry kontakt i super ceny. Polecam"</p>
+                            <p><strong>- Adam P.</strong></p>
+                            <div class="stars">
+                                ★★★★★
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <p>"Sympatyczni pracownicy, cięcie i gięcie bardzo profesjonalnie. Polecam."</p>
+                            <p><strong>- Kamil D.</strong></p>
+                            <div class="stars">
+                                ★★★★★
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <p>"Polecam"</p>
+                            <p><strong>- Dawid K.</strong></p>
+                            <div class="stars">
+                                ★★★★★
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <p>"Szybko dokładnie cena ok"</p>
+                            <p><strong>- Adam S.</strong></p>
+                            <div class="stars">
+                                ★★★★★
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <p>"Bardzo dokładnie i szybka realizacja."</p>
+                            <p><strong>- Marcin R.</strong></p>
+                            <div class="stars">
+                                ★★★★★
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <p>"Naprawdę super firma , zatrudnia samych fachowców którzy znają się na robocie i na dokumentacji technicznej , super kontakt !! Pracują na wysokiej jakości materiałach , POLECAM . Ceny mają bardzo konkurencyjne !"</p>
+                            <p><strong>- Daria W.</strong></p>
+                            <div class="stars">
+                                ★★★★★
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <p>"Zdecydowanie firma godna polecenia. Szybka realizacja zlecenia i super cena. Na pewno wrócę z niejednym tematem gdy będzie taka okazja 👍"</p>
+                            <p><strong>- Adam F.</strong></p>
+                            <div class="stars">
+                                ★★★★★
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <p>"Współpracuje z firmą LASER-tech już drugi rok i Panowie naprawdę dają radę. Robota świetnie wykonana i w terminie. Polecam P.S. Sympatyczna ekipa👍🏻👍🏻"</p>
+                            <p><strong>- Krzysztof L.</strong></p>
+                            <div class="stars">
+                                ★★★★★
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <p>"Wszystko idealnie wycięte. Szybka robota i genialne ceny. Zdecydowanie polecam."</p>
+                            <p><strong>- Hubert P.</strong></p>
+                            <div class="stars">
+                                ★★★★★
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <p>"Bardzo dobry kontakt, świetnie wykonana usługa. Napewno będę wracał. Polecam"</p>
+                            <p><strong>- Krzysztof K.</strong></p>
+                            <div class="stars">
+                                ★★★★★
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <p>"Mega szybka obsługa, blachy docięte perfekcyjnie. Polecam firmę, oraz pracownika Pana Mariusza który świetnie doradził na miejscu."</p>
+                            <p><strong>- Marcin M.</strong></p>
+                            <div class="stars">
+                                ★★★★★
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <p>"Rzetelna i solidna firma; polecam"</p>
+                            <p><strong>- Poszukiwacz P.</strong></p>
+                            <div class="stars">
+                                ★★★★★
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <p>"Polecam"</p>
+                            <p><strong>- Oliver P.</strong></p>
+                            <div class="stars">
+                                ★★★★★
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <p>"Fachowa obsługa, szybki termin realizacji, bardzo dobry park maszynowy, atrakcyjne ceny, wszystko na najwyższym poziomie. Polecam"</p>
+                            <p><strong>- Aleks O.</strong></p>
+                            <div class="stars">
+                                ★★★★★
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <p>"Zlecenie wykonane bardzo szybko, dobra jakosc i cena. Bardzo polecam :)"</p>
+                            <p><strong>- Tomasz S.</strong></p>
+                            <div class="stars">
+                                ★★★★★
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <p>"Polecam"</p>
+                            <p><strong>- Rafał</strong></p>
+                            <div class="stars">
+                                ★★★★★
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="content">
+                <h2>Kontakt</h2>
+                <p>Jeśli masz pytania lub chcesz złożyć zamówienie, skontaktuj się z nami:</p>
+                <p>Email: <a href="mailto:zamowienia.lasertech@gmail.com">zamowienia.lasertech@gmail.com</a></p>
+                <p>Telefon: <a href="tel:+48502271419">+48 502 271 419</a></p>
+                <br>
+                <p>Tworków 47-451, ul.Hanowiec 7A, Poland</p>
+            </div>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2563.123456789012!2d18.123456789012!3d50.123456789012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4711234567890123%3A0x1234567890123456!2sHanowiec%207A%2C%2047-451%20Twork%C3%B3w%2C%20Poland!5e0!3m2!1sen!2sus!4v1234567890123"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Laser-Tech. All Rights Reserved.</p>
+    </footer>
+    <script>
+        document.getElementById('background-video').playbackRate = 0.7;
+    </script>
+    <script>
+        const slides = document.querySelector('.slides');
+        const slide = document.querySelectorAll('.slide');
+        let currentIndex = 0;
+
+        function showNextSlide() {
+            const slideWidth = window.innerWidth <= 768 ? 100 : 100 / 3;
+            currentIndex = (currentIndex + 1) % slide.length;
+            slides.style.transform = `translateX(-${currentIndex * slideWidth}%)`;
+        }
+
+        setInterval(showNextSlide, 3000);
+    </script>
+</body>
+</html>
