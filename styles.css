@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -22,20 +21,32 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow-x: hidden; 
 }
 
 header {
-    background: #363636;
+    background: transparent;
+    position: fixed; 
+    width: 100%;
+    top: 0;
+    left: 0;
     height: 10vh; 
     display: flex;
     align-items: center;
     padding-left: 17%;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+}
+
+header.scrolled {
+    background: #363636;
 }
 
 header img {
     height: 100%; 
     width: auto;
     padding: 5px;
+    transition: height 0.3s ease;
 }
 
 header h1 {
@@ -58,12 +69,17 @@ video {
     height: auto;
 }
 
-.video
-{
+.video {
+    position: relative;
     background-color: #363636;
+    height: 100vh; 
+    overflow: hidden; 
 }
 
 .video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     filter: blur(10px);
 }
 
@@ -98,6 +114,7 @@ video {
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease; 
     transform-origin: center; 
+    z-index: 10; 
 }
 
 .kontakt-button:hover {
@@ -393,83 +410,78 @@ lightbox:target::before {
 
 @media (max-width: 768px) {
 
-    nav {
-        width: 100%; 
-        background: #363636; 
-        padding: 10px 0; 
+    .slide {
+        flex: 1 0 100%; 
+        margin: 10px 0; 
     }
-    
-    nav ul {
-        list-style: none; 
-        display: flex;
-        justify-content: center; 
-        padding: 0;
-        margin: 0;
-    }
-    
-    nav ul a {
-        color: white; 
-        text-decoration: none; 
-        margin: 0 10px; 
-        font-weight: bold; 
-        font-family: 'Roboto', sans-serif; 
-        font-size: 1.3em; 
+
+    nav ul a[href="#main"] {
+        display: none; 
     }
 
     header {
-        background: #363636;
+        background: transparent;
         height: auto; 
         display: flex;
-        flex-direction: column; 
+        justify-content: space-between; 
         align-items: center; 
-        padding: 10px 0; 
+        padding: 10px 5%; 
+        width: 100%; 
+        box-sizing: border-box; 
+        overflow-x: hidden; 
     }
     
     header img {
-        height: 80px; 
+        height: 60px; 
         width: auto; 
         padding: 5px;
     }
     
     header h1, header h2 {
-        margin: 5px 0; 
+        display: none; 
+    }
+
+    .video {
+        position: relative;
+        width: 100%;
+        height: 50vh; 
+        overflow-x: hidden; 
+    }
+
+    .video video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+    }
+
+    .motto {
+        font-size: 2em; 
+        width: 30vh;
+    }
+
+    .kontakt-button {
+        margin: 85px auto 0; 
+        padding: 10px 20px; 
+        background-color: transparent; 
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.3s ease; 
         text-align: center; 
-    }
-
-
-    header {
-        padding: 10px 5%;
-        color: #fb9207;
-    }
-
-    header img {
-        height: 60px; 
-    }
-
-    header h1, header h2 {
-        font-size: 1.2em;
-    }
-
-    header h2 {
-        margin-top: -18px; 
-    }
-
-    nav ul {
-        flex-direction: column; 
-        align-items: center; 
-    }
-
-    nav ul a {
-        margin: 1px 0; 
+        z-index: 10; 
     }
 
     .about-us, .offer, .why-us {
         flex-direction: column;
-        padding: 20px 5%;
+        padding: 20px 5%; 
+        width: 100%; 
+        box-sizing: border-box; 
+        overflow-x: hidden; 
     }
 
-    .about-us .photo img, .offer .photo img, .why-us .photo img 
-    {
+    .about-us .content, .offer .content, .why-us .content {
+        padding: 0 5%; 
+    }
+
+    .about-us .photo img, .offer .photo img, .why-us .photo img {
         margin-left: 0;
     }
 
@@ -479,6 +491,9 @@ lightbox:target::before {
 
     .photos {
         padding: 10px; 
+        width: 100%; 
+        box-sizing: border-box; 
+        overflow-x: hidden; 
     }
 
     .photos a {
@@ -488,37 +503,18 @@ lightbox:target::before {
 
     .contact {
         padding: 20px 5%;
+        width: 100%; 
+        box-sizing: border-box; 
+        overflow-x: hidden; 
     }
 
     .map iframe {
         height: 300px;
     }
 
-    .video video {
-        height: 50vh; 
-        object-fit: cover; 
-    }
-
-    .motto {
-        font-size: 2em; 
-        margin-top: 7vh;
-        width: 30vh;
-    }
-
-    .kontakt-button {
-        font-size: 1.2em; 
-        padding: 10px 20px; 
-        margin-top: 8vh;
-    }
-
     .offer ul li, .why-us ul li {
         display: flex;
         flex-direction: column; 
-    }
-
-    .slide {
-        flex: 1 0 calc(100% - 20px); 
-        margin: 10px 0; 
     }
 
     .offer .additional-services {

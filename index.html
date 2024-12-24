@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <img src="logo.jpg" alt="Laser-Tech">
+        <img src="logo.png" alt="Laser-Tech">
         <div>
             <h1>Laser-Tech</h1>
             <h2>Usługowe cięcie laserem</h2>
@@ -340,6 +340,28 @@
     </footer>
     <script>
         document.getElementById('background-video').playbackRate = 0.7;
+
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            const logo = document.querySelector('header img');
+            const videoHeight = document.querySelector('.video').offsetHeight;
+            if (window.scrollY > videoHeight) {
+                header.classList.add('scrolled');
+                header.style.height = "6vh";
+                logo.style.height = '50px';
+            } else {
+                header.classList.remove('scrolled');
+                header.style.height = "10vh";
+                logo.style.height = '100%';
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const slidesContainer = document.querySelector('.slides');
+            const slides = Array.from(slidesContainer.children);
+            slides.sort(() => Math.random() - 0.5);
+            slides.forEach(slide => slidesContainer.appendChild(slide));
+        });
     </script>
     <script>
         const slides = document.querySelector('.slides');
