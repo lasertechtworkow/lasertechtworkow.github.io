@@ -353,8 +353,8 @@
         function handleScroll() {
             const header = document.querySelector('header');
             const logo = document.querySelector('header svg');
-            const videoHeight = document.querySelector('.video').offsetHeight;
-            if (window.scrollY > videoHeight) {
+            const targetHeight = document.querySelector('.video').offsetHeight;
+            if (window.scrollY > targetHeight) {
                 header.classList.add('scrolled');
                 header.style.height = "6vh";
                 logo.style.height = '50px';
